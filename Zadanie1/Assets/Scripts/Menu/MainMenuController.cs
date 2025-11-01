@@ -30,7 +30,6 @@ public class MainMenuController : MonoBehaviour
         exitButton.onClick.AddListener (OnExitClicked);
 
         settingsWindow.OnBackCallback += OnBackClicked;
-        playButton.Select ();
     }
 
     private void OnDestroy ()
