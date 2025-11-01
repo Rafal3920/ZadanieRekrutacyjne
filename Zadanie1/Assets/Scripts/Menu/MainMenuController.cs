@@ -29,10 +29,6 @@ public class MainMenuController : MonoBehaviour
         exitButton.onClick.AddListener (OnExitClicked);
 
         settingsWindow.OnBackCallback += OnBackClicked;
-    }
-
-    private void OnEnable ()
-    {
         playButton.Select ();
     }
 
@@ -92,6 +88,7 @@ public class MainMenuController : MonoBehaviour
         {
             mainMenuCanvasGroup.gameObject.SetActive(true);
             mainMenuCanvasGroup.DOFade (1, FadeTime);
+            playButton.Select ();
         }
     }
 
