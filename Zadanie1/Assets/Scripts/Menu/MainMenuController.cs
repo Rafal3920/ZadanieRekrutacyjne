@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
@@ -47,7 +48,7 @@ public class MainMenuController : MonoBehaviour
 
     private void OnPlayClicked ()
     {
-
+        SceneManager.LoadScene ("Gameplay");
     }
 
     private void OnSettingsClicked ()
